@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg version="1.1" viewBox="0 0 18.04 59.074" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g>
+  <path   class="lefttri" id="tria1" fill="#30fdb8" d="M 18.04,15.623 H 0 L 9.02,0 Z"/>
+  <path  class="lefttri" id="tria2" fill="#30fdb8" d="m18.04 37.35h-18.04l9.02-15.625z"/>
+  <path class="lefttri" id="tria3" fill="#30fdb8" d="m18.04 59.074h-18.04l9.02-15.624z"/>
+ </g>
+ <script>
+  var x=1;
+   setInterval(()=>{
+   if(x==1){
+   document.getElementById('tria1').style.display="none";
+   document.getElementById('tria3').style.display="none";
+   document.getElementById('tria2').style.display="block";
+   x++;
+   }
+   else if(x==2){
+   document.getElementById('tria1').style.display="block";
+   document.getElementById('tria3').style.display="none";
+   document.getElementById('tria2').style.display="none";
+   x++;
+   }
+   else if(x==3){
+    document.getElementById('tria1').style.display="none";
+   document.getElementById('tria3').style.display="block";
+   document.getElementById('tria2').style.display="none";
+   x=1;
+   }
+   },300);
+ </script>
+ <style>
+   svg{
+   width:100px;
+   }
+ </style>
+</svg>
